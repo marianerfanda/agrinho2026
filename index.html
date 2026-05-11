@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador AgroForte 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌱 Simulador de Crescimento Sustentável</h1>
+        
+        <div class="controles">
+            <label>Escolha a Semente:</label>
+            <select id="semente">
+                <option value="alface">Alface</option>
+                <option value="cenoura">Cenoura</option>
+                <option value="tomate">Tomate</option>
+                <option value="batata">Batata</option>
+                <option value="couve">Couve</option>
+            </select>
 
+            <label>Temperatura (°C): <span id="valTemp">25</span></label>
+            <input type="range" id="temp" min="0" max="50" value="25">
+
+            <label>Irrigação (Umidade %): <span id="valUmi">50</span></label>
+            <input type="range" id="umi" min="0" max="100" value="50">
+            
+            <button onclick="iniciarSimulacao()">Plantar e Simular</button>
+        </div>
+
+        <div id="campo-cultivo">
+            <div id="planta-status">Aguardando plantio...</div>
+            <div id="progresso-barra"><div id="barra"></div></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
