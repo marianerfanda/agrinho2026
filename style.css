@@ -1,1 +1,47 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f7f0;
+    color: #2d4a22;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
 
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 { text-align: center; font-size: 1.5rem; }
+
+.controles { display: flex; flex-direction: column; gap: 15px; }
+
+input[type="range"] { accent-color: #4CAF50; }
+
+#campo-cultivo {
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px dashed #a2c9a4;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#progresso-barra {
+    width: 100%;
+    background: #eee;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+#barra {
+    width: 0%;
+    height: 100%;
+    background: #4CAF50;
+    transition: width 0.5s;
+}
